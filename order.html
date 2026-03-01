@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Order - BloomSurprise</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Your custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-dark bg-danger">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html">BloomSurprise 🌸</a>
+  </div>
+</nav>
+
+<!-- Order Form -->
+<div class="container my-5">
+    <h2 class="text-center text-danger mb-4">Place Your Order 💖</h2>
+
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <!-- ✅ Form now submits to success.html -->
+            <form action="success.html" method="get">
+
+                <div class="mb-3">
+                    <label class="form-label">Customer Name</label>
+                    <input type="text" class="form-control" required>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Mobile Number</label>
+                    <input type="tel" class="form-control" required>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Delivery Address</label>
+                    <textarea class="form-control" rows="3" required></textarea>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Select Product</label>
+                    <select class="form-control" required>
+                        <option>Red Rose Bouquet - ₹999</option>
+                        <option>White Lily Bouquet - ₹1199</option>
+                        <option>Orchid Bouquet - ₹1399</option>
+                        <option>Teddy + Roses Combo - ₹1799</option>
+                    </select>
+                </div>
+
+                <!-- ✅ Submit button -->
+                <button type="submit" class="btn btn-danger w-100">Place Order</button>
+
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="bg-danger text-white text-center p-3">
+    © 2026 BloomSurprise | Made with 💖
+</footer>
+
+</body>
+</html>
